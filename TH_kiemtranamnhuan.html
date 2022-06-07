@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra năm nhuận</title>
+</head>
+<body>
+</body>
+<script>
+    let year = prompt("Nhập năm vào đây")
+    year = Number(year)
+    let isALeapYear = true
+    if (year % 4 == 0) {
+        if (year % 100 ==0){
+            if (year % 400 ==0){
+                isALeapYear=true
+            }
+        }else {
+            isALeapYear=false;
+        }
+    }
+    if (isALeapYear) {
+       document.write(year + " is a Leap year")
+    }
+    else {
+        document.write(year + " is not a leap year")
+    }
+
+</script>
+</html>
